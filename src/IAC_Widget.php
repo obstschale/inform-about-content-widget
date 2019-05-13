@@ -29,15 +29,16 @@ class IAC_Widget extends WP_Widget
         <ul>
             <li><?php echo $message; ?></li>
         </ul>
-        <form action="#">
+        <form action="options.php" id="iac_widget_form">
             <input type="checkbox" id="iac_posts_checkbox" name="iac_posts_checkbox"
                    <?php echo $user_settings['inform_about_posts'] ? 'checked' : ''; ?>>
-            <label for="iac_posts_checkbox">Inform about Posts</label>
+            <label for="iac_posts_checkbox">Neue Beiträge abonnieren</label>
             <br>
             <input type="checkbox" id="iac_comments_checkbox" name="iac_comments_checkbox"
                    <?php echo $user_settings['inform_about_comments'] ? 'checked' : ''; ?>>
-            <label for="iac_comments_checkbox">Inform about Comments</label>
+            <label for="iac_comments_checkbox">Neue Kommentare abonnieren</label>
         </form>
+        <div id="saveResult"></div>
         <?php echo $args['after_widget']; ?>
         <?php
     }
