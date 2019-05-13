@@ -1,0 +1,12 @@
+{
+    "name": "obstschale/inform-about-content-widget",
+    "description": "Show user settings in widget",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hans-Helge Buerger",
+            "email": "mail@hanshelgebuerger.de"
+        }
+    ],
+    "require": {}
+}
